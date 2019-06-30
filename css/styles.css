@@ -140,6 +140,14 @@ form[action] {
 	width: 50%;
 }
 
+div.email-sign {
+	width: 300px;
+}
+
+div.submit-button {
+	width: 120px;
+}
+
 input[type=text] {
 	outline: none;
 	width: 300px;
@@ -147,6 +155,9 @@ input[type=text] {
 
 input[type=submit] {
 	width: 120px;
+	background-color: #F59A97;
+	color: white;
+	font-weight: bold;
 }
 
 input[type=text], input[type=submit] {
