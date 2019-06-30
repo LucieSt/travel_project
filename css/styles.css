@@ -1,0 +1,161 @@
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	/* background-image: url("images/image1.jpg");
+	background-size: 100%; */
+}
+
+/* Header */
+
+#myHeader {
+	background-color: #29E6D6;
+	padding: 50px;
+}
+
+/* Navbar */
+
+#navbar {
+	height: 50px;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+li.buttons {
+	list-style-type: none;
+	display: inline;
+	float: right;
+	margin-right: 60px;
+	margin-top: 10px;
+	font-size: 20px;
+
+}
+
+.buttons a:hover, .dropdown:hover .dropbtn {
+	color: #29E6D6;
+	text-decoration-line: none;
+}
+
+li a {
+	color: #00706D;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	font-size: 20px;
+}
+
+li.dropdown {				
+	display: inline-block;
+	float: right;
+	margin-right: 60px;
+	margin-top: 10px;
+}
+
+/* nevyzkoušeno postupně */
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	min-width: 160px;
+  	z-index: 1;
+  	padding-top: 15px;
+}
+
+.dropdown-content a {
+	color: white;
+  	text-decoration: none;
+  	display: block;
+  	line-height: 35px;
+}
+
+.dropdown-content a:hover {
+	color: #29E6D6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* konec: nevyzkoušeno postupně */
+
+/* IMAGE */
+
+img.norway-landscape {
+	width: 100%;
+}
+
+/* Footer part */
+
+/* Welcome text */
+
+div.welcome {
+	width: 100%;
+	height: 300px;
+	background-color: #00706D;
+	border:1px;
+	border-color: transparent;
+	border-bottom-left-radius: 300px 50px;
+	position: relative;
+	line-height: 35px;
+}
+
+p.my-text {
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	margin-top: 95px;
+}
+
+p.my-text span {
+	color: #F59A97;
+}
+
+/* Sign up */
+
+div.sign-up {
+	width: 100%;
+	height: 350px;
+	background-color: white;
+}
+
+p.sign-text {
+	text-align: center;
+	font-size: 25px;
+	margin-top: 90px;
+	color: #00706D;
+}
+
+span.sign-text-big {
+	font-weight: bold;
+}
+
+/* Social media */
+
+div.social {
+	width: 100%;
+	height: 250px;
+	background-color: #29E6D6;
+	border:1px;
+	border-color: transparent;
+	border-top-right-radius: 300px 50px;
+}
+
+/* Copyright and contact */
+
+div.copy-contact {
+	width: 100%;
+	height: 60px;
+	background-color: #F59A97;
+}
+
+
+
+
+
+
+
+
+
+
