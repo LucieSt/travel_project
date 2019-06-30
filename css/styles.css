@@ -7,19 +7,14 @@ body {
 
 /* Header */
 
-#myHeader {
-	background-color: #29E6D6;
-	padding: 50px;
-}
-
 /* Navbar */
 
 #navbar {
-	height: 50px;
+	height: 40px;
 	background-color: white;
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
-	/*z-index: 1;*/
+	/* z-index: 1; */
 }
 
 li.buttons {
@@ -27,7 +22,7 @@ li.buttons {
 	display: inline;
 	float: right;
 	margin-right: 60px;
-	margin-top: 10px;
+	margin-top: -3px;
 	font-size: 20px;
 
 }
@@ -50,7 +45,7 @@ li.dropdown {
 	display: inline-block;
 	float: right;
 	margin-right: 60px;
-	margin-top: 10px;
+	margin-top: -3px;
 }
 
 /* nevyzkoušeno postupně */
@@ -71,7 +66,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-	color: #29E6D6;
+	color: #00706D;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,20 +87,24 @@ img.norway-landscape {
 
 div.welcome {
 	width: 100%;
-	height: 300px;
+	height: 330px;
 	background-color: #00706D;
 	border:1px;
 	border-color: transparent;
 	border-bottom-left-radius: 300px 50px;
 	position: relative;
-	line-height: 35px;
+	line-height: 40px;
+}
+div.welcome2 {
+	width: 50%;
+	margin: auto;
+	padding: 100px 0;
 }
 
 p.my-text {
 	color: white;
 	text-align: center;
 	font-size: 23px;
-	margin-top: 95px;
 }
 
 p.my-text span {
@@ -116,26 +115,49 @@ p.my-text span {
 
 div.sign-up {
 	width: 100%;
-	height: 350px;
+	height: 400px;
 	background-color: white;
+	line-height: 40px;
+}
+
+div.sign-up2 {
+	padding-top: 105px;
 }
 
 p.sign-text {
 	text-align: center;
-	font-size: 25px;
-	margin-top: 90px;
+	font-size: 23px;
 	color: #00706D;
 }
 
 span.sign-text-big {
 	font-weight: bold;
+	font-size: 25px;
+}
+
+form[action] {
+	margin: auto;
+	width: 50%;
+}
+
+input[type=text] {
+	outline: none;
+	width: 300px;
+}
+
+input[type=submit] {
+	width: 120px;
+}
+
+input[type=text], input[type=submit] {
+	display: inline-block;
 }
 
 /* Social media */
 
 div.social {
 	width: 100%;
-	height: 250px;
+	height: 300px;
 	background-color: #29E6D6;
 	border:1px;
 	border-color: transparent;

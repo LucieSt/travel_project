@@ -14,29 +14,29 @@
 
 <body>
 
-	<!-- <h1 id="myHeader"></h1> -->
 	<header>
 		<div id="navbar">
 			<ul>
-				<li class="buttons"><a href="contact.html">contact</a></li>
-				<li class="buttons"><a href="about-me.html">about me</a></li>
+				<li class="buttons"><a href="menu/contact.html">contact</a></li>
+				<li class="buttons"><a href="menu/about-me.html">about me</a></li>
 			
 				<li class="dropdown buttons">
 
-					<a href="travels.html" class="dropbtn">travels</a>
+					<a href="menu/travels.html" class="dropbtn">travels</a>
 
 						<div class="dropdown-content">
 
-							<a href="norway.html">Norway</a>
-							<a href="spain.html">Andalusia, Spain</a>
-							<a href="vietnam.html">Vietnam</a>
-							<a href="ireland.html">Northern Ireland</a>
+							<a href="countries/norway.html">Norway</a>
+							<a href="countries/spain.html">Andalusia, Spain</a>
+							<a href="countries/vietnam.html">Vietnam</a>
+							<a href="countries/ireland.html">Northern Ireland</a>
+							<a href="countries/russian.html">Moscow, Russian</a>
 
 						</div>
 
 				</li>
 
-				<li class="buttons"><a href="new.html">NEW</a></li>
+				<li class="buttons"><a href="menu/new.html">NEW</a></li>
 				<li class="buttons"><a href="index.html">home</a></li>
 			</ul>
 		</div>
@@ -48,38 +48,35 @@
 
 	<div class="welcome">			<!-- Welcome text -->
 
-		<div class="container">
-    		<div class="row">
+		<div class="welcome2">
 
-        		<div class="col-md-3"></div>
-        
-        		<div class="col-md-6">
+			<p class="my-text"><span>Welcome</span> to my page about traveling, where you can find photos with short texts. Hope you will like it. Write me if you have any questions. Have fun!</p>
 
-					<p class="my-text"><span>Welcome</span> to my page about traveling, hope you will like it. Write me if you have any questions. Have fun!</p>
-
-				</div>
-
-				<div class="col-md-3"></div>
-    		</div>
 		</div>
+
 	</div>
 	
 	<div class="sign-up">			<!-- Sign up -->
 
-		<div class="container">
-    		<div class="row">
+		<div class="sign-up2">
 
-        		<div class="col-md-2"></div>
-        
-        		<div class="col-md-8">
+			<p class="sign-text">Do you want to receive an email when new article comes out? <br><span class="sign-text-big">Sign up!</span></p>
 
-					<p class="sign-text">Do you want to receive an email when new article comes out? <br><span class="sign-text-big">Sign up!</span></p>
-
-				</div>
-
-				<div class="col-md-2"></div>
-    		</div>
 		</div>
+
+		<form action="/action_page.php">
+
+			<div class="container" class="email-sign">
+
+				<input type="text" placeholder="Email address" name="mail" required>
+
+			</div>
+
+			<div class="container">
+				<input type="submit" value="Subscribe">
+			</div>
+		</form>
+
 	</div>
 
 	<div class="social">			<!-- Social media -->
