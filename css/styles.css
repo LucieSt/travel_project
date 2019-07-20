@@ -152,6 +152,23 @@ div.page-name-spain {
 	background-color: hsla(32, 41%, 37%, 0.7);
 }
 
+/* Photo gallery */
+
+div.photo-gallery-container {
+	background-color: #B5BDC9;
+	position: relative;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 105px;
+}
+
+div.fg-gallery {
+	width: 95%;
+	margin: auto;
+}
+
+
+
 /* Footer part */
 
 /* Welcome text */
