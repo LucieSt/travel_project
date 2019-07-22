@@ -111,6 +111,62 @@ div.drop-background { /* nechápu proč se nezobrazuje */
   display: block;
 }
 
+/* patří už k dropdown hamburgeru----------------------------------- */
+
+div.burger-list {
+  	display: none;
+  	position: absolute;
+  	top: 10px;
+  	right: 21px;
+  	min-width: 160px;
+  	z-index: 1;
+  	padding-top: 50px;
+}
+
+/* ZKOUŠKA DROPDOWN HAMBURGER MENU */
+
+@media (max-width: 575px) {
+	
+	#navbar {
+		height: 50px;
+	}
+
+	li.buttons {
+		display: none;
+	}
+
+	div.hamburger {
+		display: block;
+		float: right;
+	}
+
+	.hamburger div {
+		width: 35px;
+ 		height: 4px;
+  		background-color: black;
+  		margin: 6px 21px 6px 0;
+	}
+
+	.burger-dropdown {
+		position: relative;
+	}
+
+	.burger-dropdown:hover .burger-list {
+		display: block;
+	}
+
+	.burger-list a {
+		display: block;
+		float: right;
+		clear: right;
+		text-decoration: none;
+  		line-height: 50px;
+  		color: white;
+  		font-size: 25px;
+	}
+} 
+
+/* Konec burgeru --------------------------------------------------------*/
 
 /* IMAGE */
 
@@ -311,30 +367,30 @@ div.social {
 
 div.icons {
 	width: 100%;
-	height: 100px;
+	
 	position: absolute;
 	margin: 110px auto;
 	text-align: center;
 }
 
 .fa-facebook-square {
-	font-size: 70px;
+	font-size: 60px;
 	color: white;
 	float: left;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 .fa-instagram {
-	font-size: 70px;
+	font-size: 60px;
 	color: white;
 	float: left;
 }
 
 .fa-linkedin {
-	font-size: 70px;
+	font-size: 60px;
 	color: white;
 	float: left;
-	padding-right: 20px;
+	padding-right: 30px;
 }
 
 /* Hovers */
@@ -392,31 +448,6 @@ div.copyright-sign {
 .col-12 {width: 100%;}
 
 
-/* For EXTRA SMALL devices - xs je základ
-
-@media (max-width: 575px) {
-
-	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-		float: left;
-	}
-
-	.col-xs-1 {width: 8.33%;}
-	.col-xs-2 {width: 16.66%;}
-	.col-xs-3 {width: 25%;}
-	.col-xs-4 {width: 33.33%;}
-	.col-xs-5 {width: 41.66%;}
-	.col-xs-6 {width: 50%;}
-	.col-xs-7 {width: 58.33%;}
-	.col-xs-8 {width: 66.66%;}
-	.col-xs-9 {width: 75%;}
-	.col-xs-10 {width: 83.33%;}
-	.col-xs-11 {width: 91.66%;}
-	.col-xs-12 {width: 100%;}
-
-}
-*/
-
-
 /* For SMALL devices */
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -448,6 +479,10 @@ div.copyright-sign {
 
 	.fa-linkedin {
 		padding-right: 30px;
+	}
+
+	.fa-facebook-square, .fa-instagram, .fa-linkedin {
+	font-size: 70px;
 	}
 
 	}
@@ -489,6 +524,9 @@ div.copyright-sign {
 		padding-right: 100px;
 	}
 
+	.fa-facebook-square, .fa-instagram, .fa-linkedin {
+	font-size: 70px;
+	}
 
 }
 
@@ -528,6 +566,11 @@ div.copyright-sign {
 	.fa-linkedin {
 		padding-right: 200px;
 	}
+
+	.fa-facebook-square, .fa-instagram, .fa-linkedin {
+	font-size: 70px;
+	}
+
 }
 
 
@@ -552,20 +595,44 @@ div.copyright-sign {
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
 
+	div.welcome2 {
+		width: 50%;
+	}
+
 	div.email-sign {
 		margin-top: 70px;
 	}
 
 	.fa-facebook-square {
-		padding-left: 200px;
+		padding-left: 300px;
 	}
 
 	.fa-linkedin {
-		padding-right: 200px;
+		padding-right: 300px;
+	}
+
+	.fa-facebook-square, .fa-instagram, .fa-linkedin {
+	font-size: 70px;
 	}
 
 }
 
+/* For REALLY EXTRA LARGE devices */
+
+@media (min-width: 1700px) {
+	li.buttons {
+	margin-right: 80px;
+	}
+
+	.fa-facebook-square {
+		padding-left: 400px;
+	}
+
+	.fa-linkedin {
+		padding-right: 400px;
+	}
+
+}
 
 
 
