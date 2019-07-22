@@ -13,7 +13,7 @@ body {
 /* Navbar */
 
 #navbar {
-	height: 35px;
+	height: 50px;
 	background-color: white;
 	/* position: fixed; */
 	width: 100%;
@@ -26,9 +26,8 @@ body {
 }
 
 li.buttons {
-
+	display: none;
 	list-style-type: none;
-	display: inline;
 	float: right;
 	margin-right: 60px;
 	margin-top: -3px;
@@ -46,7 +45,7 @@ li a {
 }
 
 li a, .dropbtn {
-	display: inline-block;
+	display: none;
 	font-size: 20px;
 }
 
@@ -108,33 +107,20 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
 
-/* patří už k dropdown hamburgeru----------------------------------- */
+/* Dropdown hamburger ------------------------------------------------ */
 
-div.burger-list {
-  	display: none;
-  	position: absolute;
-  	top: 10px;
-  	right: 21px;
-  	min-width: 160px;
-  	z-index: 1;
-  	padding-top: 50px;
-}
-
-/* ZKOUŠKA DROPDOWN HAMBURGER MENU */
-
-@media (max-width: 575px) {
-	
-	#navbar {
-		height: 50px;
-	}
-
-	li.buttons {
+	div.burger-list {
 		display: none;
+		position: absolute;
+		top: 10px;
+		right: 21px;
+		min-width: 160px;
+		z-index: 1;
+		padding-top: 50px;
 	}
-
 	div.hamburger {
 		display: block;
 		float: right;
@@ -143,7 +129,7 @@ div.burger-list {
 	.hamburger div {
 		width: 35px;
  		height: 4px;
-  		background-color: black;
+  		background-color: #303030;
   		margin: 6px 21px 6px 0;
 	}
 
@@ -153,6 +139,7 @@ div.burger-list {
 
 	.burger-dropdown:hover .burger-list {
 		display: block;
+		cursor: pointer;
 	}
 
 	.burger-list a {
@@ -164,7 +151,10 @@ div.burger-list {
   		color: white;
   		font-size: 25px;
 	}
-} 
+
+	.burger-list a:hover {
+		color: #29E6D6;
+	}
 
 /* Konec burgeru --------------------------------------------------------*/
 
@@ -194,10 +184,13 @@ div.page-name {
 	border-bottom-right-radius: 10px 10px;
 }
 
+
+
 .page-name h1{
 	font-size: 60px;
 	color: white;
 	margin-right: 20px;
+	font-weight: normal;
 }
 
 /* Norway only */
@@ -508,6 +501,26 @@ div.copyright-sign {
 	.col-md-11 {width: 91.66%;}
 	.col-md-12 {width: 100%;}
 
+	#navbar {
+		height: 35px;
+	}
+
+	li.buttons {
+		display: inline;
+	}
+
+	li a, .dropbtn {
+		display: inline-block;
+	}
+
+	.hamburger div {
+		display: none;
+	}
+
+	div.burger-list {
+		display: none;
+	}
+
 	div.welcome2 {
 		width: 80%;
 	}
@@ -550,6 +563,26 @@ div.copyright-sign {
 	.col-lg-10 {width: 83.33%;}
 	.col-lg-11 {width: 91.66%;}
 	.col-lg-12 {width: 100%;}
+
+	#navbar {
+		height: 35px;
+	}
+
+	li.buttons {
+		display: inline;
+	}
+
+	li a, .dropbtn {
+		display: inline-block;
+	}
+
+	.hamburger div {
+		display: none;
+	}
+
+	div.burger-list {
+		display: none;
+	}
 
 	div.welcome2 {
 		width: 50%;
@@ -594,6 +627,26 @@ div.copyright-sign {
 	.col-xl-10 {width: 83.33%;}
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
+
+	#navbar {
+		height: 35px;
+	}
+
+	li.buttons {
+		display: inline;
+	}
+
+	li a, .dropbtn {
+		display: inline-block;
+	}
+
+	.hamburger div {
+		display: none;
+	}
+
+	div.burger-list {
+		display: none;
+	}
 
 	div.welcome2 {
 		width: 50%;
