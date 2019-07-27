@@ -82,6 +82,32 @@
 
 </div>
 
+<!-- zkouška galerie!! -->
+
+<div class="myphotogallery">
+
+    <div class="popup-gallery myphotogallery-content">
+        <a href="../css/images/image5.jpg" title="The Cleaner"><img src="../css/images/image5sm.jpg" width="250" height="250"></a>
+       <a href="../css/images/image9.jpg" title="The Cleaner"><img src="../css/images/image9sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image10.jpg" title="The Cleaner"><img src="../css/images/image10sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image11.jpg" title="The Cleaner"><img src="../css/images/image11sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image12.jpg" title="The Cleaner"><img src="../css/images/image12sm.jpg" width="250" height="250"></a>
+       <a href="../css/images/image13.jpg" title="The Cleaner"><img src="../css/images/image13sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image14.jpg" title="The Cleaner"><img src="../css/images/image14sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image15.jpg" title="The Cleaner"><img src="../css/images/image15sm.jpg" width="250" height="250"></a>
+       <a href="../css/images/image16.jpg" title="The Cleaner"><img src="../css/images/image16sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image17.jpg" title="The Cleaner"><img src="../css/images/image17sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image18.jpg" title="The Cleaner"><img src="../css/images/image18sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image19.jpg" title="The Cleaner"><img src="../css/images/image19sm.jpg" width="250" height="250"></a>
+       <a href="../css/images/image20.jpg" title="The Cleaner"><img src="../css/images/image20sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image21.jpg" title="The Cleaner"><img src="../css/images/image21sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image22.jpg" title="The Cleaner"><img src="../css/images/image22sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image23.jpg" title="The Cleaner"><img src="../css/images/image23sm.jpg" width="250" height="250"></a>
+       <a href="../css/images/image24.jpg" title="The Cleaner"><img src="../css/images/image24sm.jpg" width="250" height="250"></a>
+        <a href="../css/images/image25.jpg" title="The Cleaner"><img src="../css/images/image25sm.jpg" width="250" height="250"></a>
+    </div>
+
+</div>
 
 <!-- Footer -->
 
@@ -152,6 +178,29 @@
 
 <!-- Magnific Popup core JS file -->
 <script src="../Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
+});
+</script>
 
 </body>
 </html>

@@ -217,25 +217,32 @@ div.page-name-spain {
 
 /* Photo gallery */
 
-div.photo-gallery-container {
-	background-color: #B5BDC9;
+div.myphotogallery {
+	width: 100%;
+	background-color: white;
+	line-height: 40px;
 	position: relative;
 	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 105px;
 }
 
-div.fg-gallery {
-	width: 95%;
-	margin: auto;
+div.myphotogallery-content {
+	width: 90%;
+	margin: 50px auto;
 }
 
+.myphotogallery-content a {
+	margin: 5px 5px;
+}
+
+.myphotogallery-content a:hover {
+	opacity: .6;
+}
 
 
 /* Footer part */
 
 /* Welcome text */
-
+ 
 div.welcome {
 	width: 100%;
 	/* height: 330px; */
@@ -720,24 +727,6 @@ div.copyright-sign {
 
 
 
-
-.pswp__caption__center {
-	text-align: center;
-}
-
-figure {
-	display: inline-block;
-	width: 33.333%;
-	float: left;
-}
-
-img {
-	width: 100%;
-}
-
-.spacer {
-	height: 5em;
-}
 
 
 
