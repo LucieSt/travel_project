@@ -184,8 +184,6 @@ div.page-name {
 	border-bottom-right-radius: 10px 10px;
 }
 
-
-
 .page-name h1{
 	font-size: 60px;
 	color: white;
@@ -215,6 +213,44 @@ div.page-name-spain {
 	background-color: hsla(32, 41%, 37%, 0.7);
 }
 
+/* Travels page and headline ------------------ */
+
+div.travels-zone {
+	width: 100%;
+	background-color: #29E6D6;
+	position: relative;
+}
+
+h1.headline {
+	text-align: center;
+	font-weight: normal;
+	padding-top: 60px;
+	color: white;
+}
+
+div.travel-individuals {
+	width: 100%;
+	background-color: white;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+}
+
+div.travel-individuals-content {
+	width: 90%;
+	margin: 50px auto;
+}
+
+.travel-individuals-content a {
+	width: 90%;
+}
+
+.travel-individuals-content a:hover {
+	opacity: .7;
+}
+
+/* End of travels page and headline ------------------ */
+
 /* Photo gallery */
 
 div.myphotogallery {
@@ -238,8 +274,7 @@ div.myphotogallery-content {
 	opacity: .6;
 }
 
-
-/* Footer part */
+/* Footer part -----------------------------------------------*/
 
 /* Welcome text */
  
@@ -371,7 +406,6 @@ div.social {
 
 div.icons {
 	width: 100%;
-	
 	position: absolute;
 	margin: 110px auto;
 	text-align: center;
