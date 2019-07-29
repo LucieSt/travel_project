@@ -97,7 +97,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 	color: #00706D;
 }
 
-.drop-spain a:hover {
+.drop-blue a:hover {
 	color: #29E6D6;
  }
 
@@ -108,6 +108,10 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+.active-button {
+	color: #29E6D6;
 }
 
 /* Dropdown hamburger ------------------------------------------------ */
@@ -159,6 +163,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 /* Konec burgeru --------------------------------------------------------*/
 
 /* IMAGE */
+
 
 div.main-image-container {
 	width: 100%;
@@ -213,39 +218,66 @@ div.page-name-spain {
 	background-color: hsla(32, 41%, 37%, 0.7);
 }
 
-/* Travels page and headline ------------------ */
+/* Travels page and headline ---------------------- */
 
-div.travels-zone {
+/* div.travels-zone {
 	width: 100%;
-	background-color: #29E6D6;
+	height: ;
+	background-color: #303030;
 	position: relative;
+}
+ */
+
+div.travels-content {
+	width: 90%;
+	margin: auto;
 }
 
 h1.headline {
-	text-align: center;
-	font-weight: normal;
-	padding-top: 60px;
+	width: 50%;
+	font-weight: lighter;
+	/* padding-top: 80px;
+	padding-bottom: 80px; */
 	color: white;
-}
-
-div.travel-individuals {
-	width: 100%;
-	background-color: white;
-	line-height: 40px;
-	position: relative;
-	text-align: center;
+	font-size: 30px;
 }
 
 div.travel-individuals-content {
-	width: 90%;
-	margin: 50px auto;
+	text-align: center;
+	position: relative;
 }
 
-.travel-individuals-content a {
+div.travels-wrapper {
 	width: 90%;
+	margin: auto;
 }
 
-.travel-individuals-content a:hover {
+div.travels-wrapper a {
+	display: block;
+	margin-bottom: 20px;
+}
+
+div.text-on-image {
+	position: relative;
+}
+
+.text-on-image div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	visibility: hidden;
+	opacity: 0;
+	/* transition: opacity .2s, visibility .2s; */
+}
+
+.image-content:hover .text-on-image div {
+	visibility: visible;
+	opacity: 1;
+}
+
+.travels-wrapper a:hover {
 	opacity: .7;
 }
 
@@ -378,6 +410,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #00706D;
+	cursor: pointer;
 }
 
 input[type=submit]:active {
