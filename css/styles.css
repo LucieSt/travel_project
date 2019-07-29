@@ -233,15 +233,6 @@ div.travels-content {
 	margin: auto;
 }
 
-h1.headline {
-	width: 50%;
-	font-weight: lighter;
-	/* padding-top: 80px;
-	padding-bottom: 80px; */
-	color: white;
-	font-size: 30px;
-}
-
 div.travel-individuals-content {
 	text-align: center;
 	position: relative;
@@ -279,6 +270,18 @@ div.text-on-image {
 
 .travels-wrapper a:hover {
 	opacity: .7;
+}
+
+i.fa-chevron-down {
+	position: absolute;
+	top: 95vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	z-index: 1;
+	font-size: 6vw;
+	opacity: .4;
+
 }
 
 /* End of travels page and headline ------------------ */
