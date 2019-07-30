@@ -273,18 +273,48 @@ div.text-on-image {
 }
 
 i.fa-chevron-down {
+	display: none;
 	position: absolute;
 	top: 95vh;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
 	z-index: 1;
-	font-size: 6vw;
-	opacity: .4;
+	font-size: 5vw;
+	opacity: .2;
 
 }
 
 /* End of travels page and headline ------------------ */
+
+/* SLIDER */
+
+div.container-slider {
+	position: relative;
+	margin-top: 40px;
+}
+
+#slider {
+	width: 720px;
+	height: 540px;
+	overflow: hidden;
+	margin: auto;
+}
+
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 540px;
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	widows: 720px;
+	height: 540px;
+}
 
 /* Photo gallery */
 
