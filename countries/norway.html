@@ -78,7 +78,7 @@
 
     <img class="main-image" src="../images/norway/image4.jpg" alt="Norway landscape">
 
-    <div class="page-name page-name-norway"><h1>Norway</h1></div>
+    <div class="page-name-new"><h1>NORWAY</h1></div>
 
 </div>
 
@@ -177,29 +177,29 @@
 
 
 <!-- Magnific Popup core JS file -->
-<script src="../Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+<<script src="../Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 
 <script type="text/javascript">
 
-$(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+    $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                }
             }
-        }
+        });
     });
-});
 </script>
 
 <script src="../css/jquery-3.4.1.js"></script>
