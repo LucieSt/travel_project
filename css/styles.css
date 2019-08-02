@@ -321,6 +321,27 @@ div.myphotogallery-content {
 	opacity: .6;
 }
 
+/* ABOUT ME - introduction */
+
+div.introduction {
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+	line-height: 40px;
+}
+
+div.intro-content {
+	width: 70%;
+	margin: auto;
+	padding: 100px 0;
+}
+
+p.my-intro {
+	color: black;
+	text-align: justify;
+	font-size: 23px;
+}
+
 /* Footer part -----------------------------------------------*/
 
 /* Welcome text */
