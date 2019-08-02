@@ -334,10 +334,11 @@ div.intro-content {
 	width: 70%;
 	margin: auto;
 	padding: 100px 0;
+	border-bottom: #354B4F solid 1px;
 }
 
 p.my-intro {
-	color: black;
+	color: #354B4F;
 	text-align: justify;
 	font-size: 23px;
 }
@@ -391,7 +392,7 @@ div.sign-up2 {
 p.sign-text {
 	text-align: center;
 	font-size: 23px;
-	color: #00706D;
+	color: #354B4F;
 
 }
 
@@ -435,7 +436,8 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-	background-color: #FF7868;
+	background-color: #354B4F;
+	opacity: .8;
 	color: white;
 	font-weight: bold;
 	margin-left: 30px;
@@ -445,13 +447,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #00706D;
+	opacity: 1;
 	cursor: pointer;
 }
 
 input[type=submit]:active {
 	outline: none;
-	background-color: #29E6D6;
+	opacity: .6;
 }
 
 input[type=text], input[type=submit] {
@@ -503,15 +505,15 @@ div.icons {
 /* Hovers */
 
 i.fa-facebook-square:hover {
-	color: #FF7868;
+	color: #354B4F;
 }
 
 i.fa-instagram:hover {
-	color: #FF7868;
+	color: #354B4F;
 }
 
 i.fa-linkedin:hover {
-	color: #FF7868;
+	color: #354B4F;
 }
 
 /* Copyright and contact */
