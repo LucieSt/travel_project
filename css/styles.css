@@ -40,7 +40,7 @@ li.buttons {
 }
 
 li a {
-	color: #00706D;
+	color: #385956;
 }
 
 li a, .dropbtn {
@@ -94,7 +94,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 }
 
 .dropdown-content a:hover {
-	color: #00706D;
+	color: #385956;
 }
 
 .drop-blue a:hover {
@@ -103,7 +103,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 
 .drop-contact a:hover {
 	color: white;
-	text-shadow: 0 0 8px #00706D;
+	text-shadow: 0 0 8px #385956;
 }
 
 .dropdown:hover .dropdown-content {
@@ -168,7 +168,6 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 div.main-image-container {
 	width: 100%;
 	position: relative;
-
 }
 
 img.main-image {
@@ -211,7 +210,7 @@ div.page-name-new {
  */
 
 div.travels-content {
-	width: 90%;
+	width: 91%;
 	margin: auto;
 }
 
@@ -221,7 +220,7 @@ div.travel-individuals-content {
 }
 
 div.travels-wrapper {
-	width: 90%;
+	width: 91%;
 	margin: auto;
 }
 
@@ -298,7 +297,36 @@ div.container-slider {
 	height: 540px;
 }
 
-/* Photo gallery */
+/* Photo gallery - main content */
+
+div.description-container {
+	width: 100%;
+	height: 300px;
+	background-color: #7CA6A2;
+	border:1px;
+	border-color: transparent;
+	border-bottom-left-radius: 300px 50px;
+	text-align: center;
+}
+
+div.description-content {
+	width: 100%;
+	position: absolute;
+	margin: 110px auto;
+	text-align: center;
+}
+
+.description-content p {
+	width: 80%;
+	color: #385956;
+	font-size: 23px;
+	text-align: justify;
+	margin: auto;
+}
+
+.description-content span {
+	font-weight: bold;
+}
 
 div.myphotogallery {
 	width: 100%;
@@ -334,11 +362,11 @@ div.intro-content {
 	width: 70%;
 	margin: auto;
 	padding: 100px 0;
-	border-bottom: #354B4F solid 1px;
+	border-bottom: #385956 solid 1px;
 }
 
 p.my-intro {
-	color: #354B4F;
+	color: #385956;
 	text-align: justify;
 	font-size: 23px;
 }
@@ -350,7 +378,7 @@ p.my-intro {
 div.welcome {
 	width: 100%;
 	/* height: 330px; */
-	background-color: #00706D;
+	background-color: #385956;
 	border:1px;
 	border-color: transparent;
 	border-bottom-left-radius: 300px 50px;
@@ -392,7 +420,7 @@ div.sign-up2 {
 p.sign-text {
 	text-align: center;
 	font-size: 23px;
-	color: #354B4F;
+	color: #385956;
 
 }
 
@@ -436,8 +464,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-	background-color: #354B4F;
-	opacity: .8;
+	background-color: #385956;
 	color: white;
 	font-weight: bold;
 	margin-left: 30px;
@@ -447,7 +474,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	opacity: 1;
+	background-color: #4D736F;
 	cursor: pointer;
 }
 
@@ -505,15 +532,15 @@ div.icons {
 /* Hovers */
 
 i.fa-facebook-square:hover {
-	color: #354B4F;
+	color: #385956;
 }
 
 i.fa-instagram:hover {
-	color: #354B4F;
+	color: #385956;
 }
 
 i.fa-linkedin:hover {
-	color: #354B4F;
+	color: #385956;
 }
 
 /* Copyright and contact */
@@ -521,7 +548,7 @@ i.fa-linkedin:hover {
 div.copy-contact {
 	width: 100%;
 	height: 50px;
-	background-color: #00706D;
+	background-color: #385956;
 }
 
 div.copyright-sign {
