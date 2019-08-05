@@ -35,7 +35,7 @@ li.buttons {
 }
 
 .buttons a:hover, .dropdown:hover .dropbtn {
-	color: #29E6D6;
+	color: #AFE5DB;
 	text-decoration-line: none;
 }
 
@@ -98,7 +98,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 }
 
 .drop-blue a:hover {
-	color: #29E6D6;
+	color: #AFE5DB;
  }
 
 .drop-contact a:hover {
@@ -111,7 +111,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 }
 
 .active-button {
-	color: #29E6D6;
+	color: #AFE5DB;
 }
 
 /* Dropdown hamburger ------------------------------------------------ */
@@ -157,7 +157,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 	}
 
 	.burger-list a:hover {
-		color: #29E6D6;
+		color: #AFE5DB;
 	}
 
 /* Konec burgeru --------------------------------------------------------*/
@@ -168,6 +168,7 @@ div.drop-background { /* nechápu proč se nezobrazuje */
 div.main-image-container {
 	width: 100%;
 	position: relative;
+
 }
 
 img.main-image {
@@ -210,7 +211,7 @@ div.page-name-new {
  */
 
 div.travels-content {
-	width: 91%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -220,7 +221,7 @@ div.travel-individuals-content {
 }
 
 div.travels-wrapper {
-	width: 91%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -297,35 +298,49 @@ div.container-slider {
 	height: 540px;
 }
 
-/* Photo gallery - main content */
+/* Photo gallery */
 
 div.description-container {
 	width: 100%;
-	height: 300px;
-	background-color: #7CA6A2;
-	border:1px;
-	border-color: transparent;
-	border-bottom-left-radius: 300px 50px;
+	background-color: #AFE5DB;
 	text-align: center;
 }
 
 div.description-content {
-	width: 100%;
-	position: absolute;
-	margin: 110px auto;
-	text-align: center;
+	width: 80%;
+	margin: auto;
+	padding: 110px 0 110px 0;
 }
 
 .description-content p {
-	width: 80%;
 	color: #385956;
-	font-size: 23px;
-	text-align: justify;
-	margin: auto;
+	font-size: 21px;
 }
 
 .description-content span {
-	font-weight: bold;
+	color: white;
+}
+
+div.rounded-corner-bottom {
+	width: 100%;
+	height: 60px;
+	background-color: #AFE5DB;
+}
+
+div.rounded-corner-top {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border:1px;
+	border-color: transparent;
+}
+
+div.rounded-left-bottom {
+	border-top-left-radius: 300px 50px;
+}
+
+div.rounded-right-top {
+	border-bottom-right-radius: 300px 50px;
 }
 
 div.myphotogallery {
@@ -347,6 +362,10 @@ div.myphotogallery-content {
 
 .myphotogallery-content a:hover {
 	opacity: .6;
+}
+
+.myphotogallery img {
+	object-fit: cover;
 }
 
 /* ABOUT ME - introduction */
@@ -420,7 +439,7 @@ div.sign-up2 {
 p.sign-text {
 	text-align: center;
 	font-size: 23px;
-	color: #385956;
+	color: #354B4F;
 
 }
 
@@ -474,7 +493,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #4D736F;
+	background-color: #7CA6A2;
+	opacity: 1;
 	cursor: pointer;
 }
 
@@ -495,7 +515,7 @@ input[type=text], input[type=submit] {
 div.social {
 	width: 100%;
 	height: 300px;
-	background-color: #29E6D6;
+	background-color: #AFE5DB;
 	border:1px;
 	border-color: transparent;
 	border-top-right-radius: 300px 50px;
