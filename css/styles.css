@@ -390,6 +390,32 @@ p.my-intro {
 	font-size: 23px;
 }
 
+/* contact */
+
+div.contact-container {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	font-size: 23px;
+	color: #385956;
+	padding: 65px 0 65px 0;
+}
+
+.contact-container p {
+	width: 80%;
+	margin: auto;
+}
+
+.contact-container span {
+	color: #7CA6A2;
+}
+
+div.pre-contact-container {
+	background-color: #AFE5DB;
+	width: 100%;
+	height: 230px;
+}
+
 /* Footer part -----------------------------------------------*/
 
 /* Welcome text */
