@@ -1,8 +1,6 @@
 
 body {
 	font-family: 'Quicksand', sans-serif;
-	/* background-image: url("images/image1.jpg");
-	background-size: 100%; */
 }
 * {
 	margin: 0;
@@ -50,7 +48,6 @@ li a, .dropbtn {
 
 li.dropdown {				
 	display: inline-block;
-	float: right;
 	margin-right: 60px;
 	margin-top: -3px;
 }
@@ -540,7 +537,6 @@ input[type=submit]:active {
 
 input[type=text], input[type=submit] {
 	display: inline-block;
-	float: left;
 	border-radius: 5px;
 	height: 45px;
 }
@@ -558,30 +554,24 @@ div.social {
 }
 
 div.icons {
+	display: flex;
 	width: 100%;
 	position: absolute;
 	margin: 110px auto;
 	text-align: center;
 }
 
-.fa-facebook-square {
-	font-size: 60px;
-	color: white;
-	float: left;
-	padding-left: 30px;
+div.icon-fb, div.icon-ig, div.icon-linked {
+	flex: 2;
 }
 
-.fa-instagram {
-	font-size: 60px;
-	color: white;
-	float: left;
+div.empty-first, div.empty-last {
+	flex: 1;
 }
 
-.fa-linkedin {
+.fa-facebook-square, .fa-instagram, .fa-linkedin {
 	font-size: 60px;
 	color: white;
-	float: left;
-	padding-right: 30px;
 }
 
 /* Hovers */
@@ -664,19 +654,11 @@ div.copyright-sign {
 		margin-top: 70px;
 	}
 
-	.fa-facebook-square {
-		padding-left: 30px;
-	}
-
-	.fa-linkedin {
-		padding-right: 30px;
-	}
-
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 70px;
+		font-size: 70px;
 	}
 
-	}
+}
 
 /* For MEDIUM devices */
 
@@ -736,18 +718,13 @@ div.copyright-sign {
 		margin-top: 70px;
 	}
 
-	.fa-facebook-square {
-		padding-left: 100px;
-	}
-
-	.fa-linkedin {
-		padding-right: 100px;
+	div.empty-first, div.icon-fb, div.icon-ig, div.icon-linked, div.empty-last {
+		flex: 1;
 	}
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 70px;
+		font-size: 70px;
 	}
-
 }
 
 /* For LARGE devices */
@@ -808,18 +785,13 @@ div.copyright-sign {
 		margin-top: 70px;
 	}
 
-	.fa-facebook-square {
-		padding-left: 200px;
-	}
-
-	.fa-linkedin {
-		padding-right: 200px;
+	div.empty-first, div.icon-fb, div.icon-ig, div.icon-linked, div.empty-last {
+		flex: 1;
 	}
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 70px;
+		font-size: 70px;
 	}
-
 }
 
 
@@ -881,35 +853,30 @@ div.copyright-sign {
 		margin-top: 70px;
 	}
 
-	.fa-facebook-square {
-		padding-left: 300px;
-	}
-
-	.fa-linkedin {
-		padding-right: 300px;
+	div.empty-first, div.icon-fb, div.icon-ig, div.icon-linked, div.empty-last {
+		flex: 1;
 	}
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 70px;
+		font-size: 70px;
 	}
-
 }
 
 /* For REALLY EXTRA LARGE devices */
 
 @media (min-width: 1700px) {
+
 	li.buttons {
 	margin-right: 80px;
 	}
 
-	.fa-facebook-square {
-		padding-left: 400px;
+	div.empty-first, div.icon-fb, div.icon-ig, div.icon-linked, div.empty-last {
+		flex: 1;
 	}
 
-	.fa-linkedin {
-		padding-right: 400px;
+	.fa-facebook-square, .fa-instagram, .fa-linkedin {
+		font-size: 70px;
 	}
-
 }
 
 
