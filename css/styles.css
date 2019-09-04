@@ -232,6 +232,7 @@ div.text-on-image {
 }
 
 .text-on-image div {
+	color: black;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -239,7 +240,12 @@ div.text-on-image {
 	font-size: 60px;
 	visibility: hidden;
 	opacity: 0;
-	/* transition: opacity .2s, visibility .2s; */
+	transition-duration: 0.75s;
+	/* transition: opacity .1s, visibility .1s; */
+}
+
+img.image {
+	transition-duration: 0.75s;
 }
 
 .image-content:hover .text-on-image div {
@@ -247,9 +253,13 @@ div.text-on-image {
 	opacity: 1;
 }
 
-.travels-wrapper a:hover {
+.opacity {
 	opacity: .7;
 }
+
+/* .image-content a:hover {
+	opacity: .7;
+} */
 
 i.fa-chevron-down {
 	display: none;
