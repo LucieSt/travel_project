@@ -57,14 +57,7 @@ div.dropdown-content {
   	position: absolute;
   	min-width: 160px;
   	padding-top: 15px;
-    z-index: 2;
-}
-
-div.drop-background { /* nechápu proč se nezobrazuje */
-
-	border: 1px transparent;
-	border-bottom-right-radius: 10px 10px;
-	border-bottom-left-radius: 10px 10px;
+	z-index: 2;
 }
 
 .drop-background a {
@@ -87,7 +80,6 @@ div.drop-background { /* nechápu proč se nezobrazuje */
   	text-decoration: none;
   	display: block;
   	line-height: 35px;
-
 }
 
 .dropdown-content a:hover {
@@ -190,7 +182,12 @@ div.page-name-new {
     font-size: 10vw;
     font-weight: normal;
     color: white;
-    opacity: .6;
+	opacity: 0;
+	transition-duration: 2s;
+}
+
+.show-page-name h1{
+	opacity: .6;
 }
 
 .page-name-smaller h1 {
@@ -492,13 +489,6 @@ span.sign-text-big {
 
 /* Signing form */
 
-/* form[action] {
-	width: 100%;
-  	left : 100px;
-  	top  : 50px;
-  	margin: auto;
-} */
-
 div.form-form {
 	width: 100%;
 	position: relative;
@@ -506,18 +496,19 @@ div.form-form {
 }
 
 div.email-sign {
-	width: 400px;
+	width: 600px;
 	height: 70px;
 	margin: auto;
 	margin-top: 90px;
 }
 
 input[type=text] {
-	width: 260px;
+	width: 300px;
 	padding-left: 15px;
 	outline: none;
 	border: 2px solid lightgrey;
 	font-size: 16px;
+	margin-left: 100px;
 }
 
 input[type=text]:focus {
@@ -528,7 +519,7 @@ input[type=submit] {
 	background-color: #385956;
 	color: white;
 	font-weight: bold;
-	margin-left: 30px;
+	margin-left: 20px;
 	width: 80px;
 	border: transparent;
 	font-size: 16px;
@@ -549,6 +540,13 @@ input[type=text], input[type=submit] {
 	display: inline-block;
 	border-radius: 5px;
 	height: 45px;
+}
+
+div.response {
+	color: #354B4F;
+	margin-top: 30px;
+	font-size: 20px;
+	text-align: center;
 }
 
 /* Social media */
