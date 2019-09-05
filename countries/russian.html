@@ -127,21 +127,21 @@
 
     <div class="form-form">
 
-        <form action="/action_page.php">
+			<form>
 
-            <div class="email-sign">  <!-- Musím nastavit rozměry!!! -->
+				<div class="email-sign"> 
 
-                <input type="text" placeholder="Enter your email" name="mail" required>
+					<input type="email" placeholder="Enter your email" id="text" name="mail" required>
 
-                <input type="submit" value="GO!">
+					<input type="submit" value="GO!">
 
-            </div>
+				</div>
 
-        </form>
+			</form>
 
-    </div>
+		</div>
 
-</div>
+	</div>
 
 <!-- Social media -->
 
@@ -200,6 +200,15 @@
         });
     });
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script src="../js/all.js"></script>
 
 <script src="../js/all_travels.js"></script>
 

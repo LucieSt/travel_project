@@ -12,9 +12,4 @@ containers.forEach(container => {
     container.addEventListener('mouseleave', () => {
         image.classList.remove('opacity');
     });
-
 });
-
-
-
-
