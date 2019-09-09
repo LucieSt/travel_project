@@ -36,3 +36,35 @@ form.addEventListener('submit', e => {
     form.reset();
 });
 
+// show more content
+
+const chevronShow = document.querySelectorAll('.chevron-show');
+const chevronHide = document.querySelectorAll('.chevron-hide');
+
+chevronShow.forEach(icon => {
+    icon.addEventListener('click', e => {
+        const textContent = document.querySelectorAll('.more-text');
+        textContent.forEach(p => {
+                if(e.srcElement.parentElement.parentElement === p.parentElement){
+                    p.classList.remove('hidden-class');
+                    p.previousElementSibling.classList.add('hidden-class');
+                    p.nextElementSibling.classList.remove('hidden-class');
+                };
+        });
+    });
+});
+
+chevronHide.forEach(icon => {
+   icon.addEventListener('click', e => {
+        const textContent = document.querySelectorAll('.more-text');
+        textContent.forEach(p => {
+            if(e.srcElement.parentElement.parentElement === p.parentElement){
+                p.classList.add('hidden-class');
+                p.previousElementSibling.classList.remove('hidden-class');
+                p.nextElementSibling.classList.add('hidden-class');
+            };
+        });
+    });
+});
+
+

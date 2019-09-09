@@ -1,5 +1,4 @@
 const containers = document.querySelectorAll('.image-content');
-const images = document.querySelectorAll('.image');
 
 containers.forEach(container => {
    
