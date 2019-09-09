@@ -316,13 +316,15 @@ div.norway-section {
 }
 
 div.barcelona-section {
-	/* background-color: #FBEEB3; */
 	background-color: #F9F2D6;
 }
 
 div.vietnam-section {
-	/* background-color: #FBEEB3; */
 	background-color: #B4D1FF;
+}
+
+div.andalusia-section {
+	background-color: #EBD0CA;
 }
 
 div.description-content {
