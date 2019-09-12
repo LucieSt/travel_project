@@ -330,19 +330,23 @@ div.description-container {
 }
 
 div.norway-section {
-	background-color: #AFE5DB;
+	background: #AFE5DB;
 }
 
 div.barcelona-section {
-	background-color: #F9F2D6;
+	background: #F9F2D6;
 }
 
 div.vietnam-section {
-	background-color: #B4D1FF;
+	background: #B4D1FF;
 }
 
 div.andalusia-section {
-	background-color: #EBD0CA;
+	background: #EBD0CA;
+}
+
+div.russian-section {
+	background: #EDF3FF;
 }
 
 div.description-content {
