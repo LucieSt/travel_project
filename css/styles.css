@@ -18,6 +18,23 @@ body {
     z-index: 2;
 }
 
+.lang a {
+	color: #385956;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	font-size: 20px;
+	margin-top: -3px;
+	text-decoration-line: none;
+	text-decoration: none;
+}
+
+.lang a:hover {
+	cursor: pointer;
+	color: #AFE5DB;
+	
+}
+
 .buttons a {
 	text-decoration: none;
 }
@@ -215,13 +232,13 @@ div.travel-individuals-content {
 }
 
 div.travels-wrapper {
-	width: 90%;
+	width: 98%;
 	margin: auto;
 }
 
 div.travels-wrapper a {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 div.text-on-image {
@@ -238,6 +255,7 @@ div.text-on-image {
 	visibility: hidden;
 	opacity: 0;
 	transition-duration: 0.75s;
+	white-space: nowrap;
 	/* transition: opacity .1s, visibility .1s; */
 }
 
