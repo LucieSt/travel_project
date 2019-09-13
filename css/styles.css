@@ -434,6 +434,7 @@ p.my-intro {
 	color: #385956;
 	text-align: justify;
 	font-size: 23px;
+	text-align-last: center;
 }
 
 /* contact */
@@ -618,15 +619,15 @@ div.empty-first, div.empty-last {
 /* Hovers */
 
 i.fa-facebook-square:hover {
-	color: #385956;
+	color: #7CA6A2;
 }
 
 i.fa-instagram:hover {
-	color: #385956;
+	color: #7CA6A2;
 }
 
 i.fa-linkedin:hover {
-	color: #385956;
+	color: #7CA6A2;
 }
 
 /* Copyright and contact */
