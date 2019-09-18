@@ -591,19 +591,20 @@ div.form-form {
 }
 
 div.email-sign {
-	width: 600px;
+	width: 100%;
 	height: 70px;
 	margin: auto;
 	margin-top: 90px;
+	text-align: center;
 }
 
 input[type=email] {
-	width: 300px;
-	padding-left: 15px;
+	width: 220px;
 	outline: none;
 	border: 2px solid lightgrey;
 	font-size: 16px;
-	margin-left: 100px;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 input[type=email]:focus {
@@ -614,7 +615,7 @@ input[type=submit] {
 	background-color: #385956;
 	color: white;
 	font-weight: bold;
-	margin-left: 20px;
+	margin: auto;
 	width: 80px;
 	border: transparent;
 	font-size: 16px;
@@ -632,7 +633,7 @@ input[type=submit]:active {
 }
 
 input[type=email], input[type=submit] {
-	display: inline-block;
+	display: block;
 	border-radius: 5px;
 	height: 45px;
 }
@@ -758,6 +759,10 @@ div.copyright-sign {
 	.col-sm-11 {width: 91.66%;}
 	.col-sm-12 {width: 100%;}
 
+	input[type=email] {
+	width: 300px;
+	}
+	
 	div.email-sign {
 		margin-top: 70px;
 	}
@@ -788,6 +793,20 @@ div.copyright-sign {
 	.col-md-10 {width: 83.33%;}
 	.col-md-11 {width: 91.66%;}
 	.col-md-12 {width: 100%;}
+
+	input[type=email] {
+		width: 300px;
+		padding-left: 15px;
+		margin-bottom: 0;
+	}
+
+	input[type=submit] {
+		margin-left: 20px;
+	}
+
+	input[type=email], input[type=submit] {
+		display: inline-block;
+	}
 
 	.logo a {
 		left: 20px;
@@ -880,6 +899,20 @@ div.copyright-sign {
 	.col-lg-10 {width: 83.33%;}
 	.col-lg-11 {width: 91.66%;}
 	.col-lg-12 {width: 100%;}
+
+	input[type=email] {
+		width: 300px;
+		padding-left: 15px;
+		margin-bottom: 0;
+	}
+
+	input[type=submit] {
+		margin-left: 20px;
+	}
+
+	input[type=email], input[type=submit] {
+		display: inline-block;
+	}
 
 	.logo a {
 		font-size: 20px;
@@ -979,6 +1012,20 @@ div.copyright-sign {
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
 
+	input[type=email] {
+		width: 300px;
+		padding-left: 15px;
+		margin-bottom: 0;
+	}
+
+	input[type=submit] {
+		margin-left: 20px;
+	}
+
+	input[type=email], input[type=submit] {
+		display: inline-block;
+	}
+
 	.logo a {
 		font-size: 20px;
 		margin-top: -3px;
@@ -1058,7 +1105,21 @@ div.copyright-sign {
 
 @media (min-width: 1700px) {
 
-	#slider {
+input[type=email] {
+	width: 300px;
+	padding-left: 15px;
+	margin-bottom: 0;
+}
+
+input[type=submit] {
+	margin-left: 20px;
+}
+
+input[type=email], input[type=submit] {
+	display: inline-block;
+}
+	
+#slider {
 	width: 720px;
 	height: 540px;
 }
