@@ -67,4 +67,11 @@ chevronHide.forEach(icon => {
     });
 });
 
+// add event listener to burger menu
 
+const burger = document.querySelector('.hamburger');
+const burgerList = document.querySelector('.burger-list');
+
+burger.addEventListener('click', () => {
+    burgerList.classList.toggle('hidden-class');
+});
