@@ -649,7 +649,7 @@ div.response {
 
 div.social {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	background-color: #AFE5DB;
 	border:1px;
 	border-color: transparent;
@@ -661,20 +661,16 @@ div.icons {
 	display: flex;
 	width: 100%;
 	position: absolute;
-	margin: 110px auto;
+	margin: 90px auto;
 	text-align: center;
 }
 
 div.icon-fb, div.icon-ig, div.icon-linked {
-	flex: 2;
-}
-
-div.empty-first, div.empty-last {
 	flex: 1;
 }
 
 .fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 60px;
+	font-size: 40px;
 	color: white;
 }
 
@@ -768,8 +764,25 @@ div.copyright-sign {
 	}
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
-		font-size: 70px;
+		font-size: 60px;
 	}
+
+	div.icon-fb, div.icon-ig, div.icon-linked {
+		flex: 2;
+	}
+	
+	div.social {
+		height: 300px;
+	}
+	
+	div.icons {
+		margin: 110px auto;
+	}
+	
+	div.empty-first, div.empty-last {
+		flex: 1;
+	}
+	
 
 }
 
@@ -872,10 +885,19 @@ div.copyright-sign {
 	div.empty-first, div.icon-fb, div.icon-ig, div.icon-linked, div.empty-last {
 		flex: 1;
 	}
-
+	
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
 		font-size: 70px;
 	}
+	
+	div.social {
+		height: 300px;
+	}
+	
+	div.icons {
+		margin: 110px auto;
+	}
+	
 }
 
 /* For LARGE devices */
@@ -986,6 +1008,14 @@ div.copyright-sign {
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
 		font-size: 70px;
+	}
+
+	div.social {
+		height: 300px;
+	}
+	
+	div.icons {
+		margin: 110px auto;
 	}
 }
 
@@ -1099,6 +1129,14 @@ div.copyright-sign {
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
 		font-size: 70px;
 	}
+
+	div.social {
+		height: 300px;
+	}
+	
+	div.icons {
+		margin: 110px auto;
+	}
 }
 
 /* For REALLY EXTRA LARGE devices */
@@ -1171,6 +1209,14 @@ input[type=email], input[type=submit] {
 
 	.fa-facebook-square, .fa-instagram, .fa-linkedin {
 		font-size: 70px;
+	}
+
+	div.social {
+		height: 300px;
+	}
+	
+	div.icons {
+		margin: 110px auto;
 	}
 }
 
