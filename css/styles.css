@@ -224,8 +224,8 @@ img.main-image {
 div.page-name-new {
     position: absolute;
     text-align: center;
-    top: -20px;
-	left: 38px;
+    top: 0;
+	left: 10px;
     margin: auto;
 	z-index: 1;
 	cursor: default;
@@ -423,7 +423,8 @@ div.description-content {
 
 .description-content p {
 	color: #385956;
-	font-size: 21px;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 span.white {
@@ -760,6 +761,10 @@ div.copyright-sign {
 	.col-sm-11 {width: 91.66%;}
 	.col-sm-12 {width: 100%;}
 
+	div.page-name-new {
+		top: -10px;
+	}
+
 	div.contact-container {
 		font-size: 23px;
 		line-height: 40px;
@@ -840,6 +845,15 @@ div.copyright-sign {
 	.col-md-10 {width: 83.33%;}
 	.col-md-11 {width: 91.66%;}
 	.col-md-12 {width: 100%;}
+
+	.description-content p {
+		font-size: 19px;
+	}
+
+	div.page-name-new {
+		top: -10px;
+		left: 20px;
+	}
 
 	.text-image {
 		display: none;
@@ -993,6 +1007,15 @@ div.copyright-sign {
 	.col-lg-10 {width: 83.33%;}
 	.col-lg-11 {width: 91.66%;}
 	.col-lg-12 {width: 100%;}
+
+	.description-content p {
+		font-size: 19px;
+	}
+
+	div.page-name-new {
+		top: -20px;
+		left: 38px;
+	}
 
 	.text-image {
 		display: none;
@@ -1152,6 +1175,15 @@ div.copyright-sign {
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
 
+	.description-content p {
+		font-size: 19px;
+	}
+
+	div.page-name-new {
+		top: -20px;
+		left: 38px;
+	}
+
 	.text-image {
 		display: none;
 	}
@@ -1290,6 +1322,15 @@ div.copyright-sign {
 /* For REALLY EXTRA LARGE devices */
 
 @media (min-width: 1700px) {
+
+.description-content p {
+	font-size: 19px;
+}
+
+div.page-name-new {
+    top: -20px;
+	left: 38px;
+}
 
 .text-image {
 	display: none;
