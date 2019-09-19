@@ -299,16 +299,21 @@ div.text-on-image {
 	opacity: 0;
 	transition-duration: 0.75s;
 	white-space: nowrap;
-	/* transition: opacity .1s, visibility .1s; */
+}
+
+.text-image {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	text-shadow: 1px 1px 1px 1px black;
 }
 
 img.image {
 	transition-duration: 0.75s;
-}
-
-.image-content:hover .text-on-image div {
-	visibility: visible;
-	opacity: 1;
 }
 
 .opacity {
@@ -836,6 +841,15 @@ div.copyright-sign {
 	.col-md-11 {width: 91.66%;}
 	.col-md-12 {width: 100%;}
 
+	.text-image {
+		display: none;
+	}
+
+	.image-content:hover .text-on-image div {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	div.contact-container {
 		font-size: 23px;
 		line-height: 40px;
@@ -979,6 +993,15 @@ div.copyright-sign {
 	.col-lg-10 {width: 83.33%;}
 	.col-lg-11 {width: 91.66%;}
 	.col-lg-12 {width: 100%;}
+
+	.text-image {
+		display: none;
+	}
+
+	.image-content:hover .text-on-image div {
+		visibility: visible;
+		opacity: 1;
+	}
 
 	div.contact-container {
 		font-size: 23px;
@@ -1129,6 +1152,15 @@ div.copyright-sign {
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
 
+	.text-image {
+		display: none;
+	}
+
+	.image-content:hover .text-on-image div {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	div.contact-container {
 		font-size: 23px;
 		line-height: 40px;
@@ -1258,6 +1290,15 @@ div.copyright-sign {
 /* For REALLY EXTRA LARGE devices */
 
 @media (min-width: 1700px) {
+
+.text-image {
+	display: none;
+}
+
+.image-content:hover .text-on-image div {
+	visibility: visible;
+	opacity: 1;
+}
 
 div.contact-container {
 	font-size: 23px;
