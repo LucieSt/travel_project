@@ -222,8 +222,13 @@ img.main-image-mobile {
 	margin-bottom: -4px;
 }
 
-img.main-image {
+img.main-image-index {
 	display: none;
+}
+
+img.main-image {
+	margin-bottom: -4px;
+	width: 100%;
 }
 
 .main-image-container img {
@@ -821,7 +826,7 @@ div.copyright-sign {
 		display: none;
 	}
 
-	img.main-image {
+	img.main-image-index {
 		display: block;
 		width: 100%;
 	}
@@ -1438,7 +1443,7 @@ input[type=email], input[type=submit] {
 		font-size: 23px;
 	}
 
-	img.main-image {
+	img.main-image-index {
 		display: block;
 		width: 100%;
 	}
