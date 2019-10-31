@@ -1,6 +1,11 @@
+html,body {
+    overflow-x: hidden; 
+}
+
 
 body {
 	font-family: 'Quicksand', sans-serif;
+	width: 100%;
 }
 * {
 	margin: 0;
@@ -212,9 +217,13 @@ div.main-image-container {
 	position: relative;
 }
 
-img.main-image {
+img.main-image-mobile {
 	width: 100%;
-	margin-bottom: -4px; /* chtělo by to opravit lépe */
+	margin-bottom: -4px;
+}
+
+img.main-image {
+	display: none;
 }
 
 .main-image-container img {
@@ -359,31 +368,17 @@ p.more-text {
 
 /* SLIDER */
 
-div.container-slider {
+.about-me-img-wrapper {
+	width: 100%;
 	position: relative;
-	margin-top: 40px;
 }
 
-#slider {
-	width: 720px;
-	height: 540px;
-	overflow: hidden;
-	margin: auto;
+.about-me-img {
+	width: 100%;
 }
 
-#slider .slides {
-	display: block;
-	width: 6000px;
-	height: 540px;
-	margin: 0;
-	padding: 0;
-}
-
-#slider .slide {
-	float: left;
-	list-style-type: none;
-	width: 720px;
-	height: 540px;
+div.container-slider {
+	display: none;
 }
 
 /* Photo gallery */
@@ -487,20 +482,20 @@ div.introduction {
 	margin-top: 20px;
 	width: 100%;
 	position: relative;
-	line-height: 40px;
+	line-height: 35px;
 }
 
 div.intro-content {
-	width: 70%;
+	width: 80%;
 	margin: auto;
-	padding: 100px 0;
+	padding: 40px 0 100px 0;
 	border-bottom: #385956 solid 1px;
 }
 
 p.my-intro {
 	color: #385956;
 	text-align: justify;
-	font-size: 23px;
+	font-size: 19px;
 	text-align-last: center;
 }
 
@@ -598,7 +593,7 @@ div.form-form {
 
 div.email-sign {
 	width: 100%;
-	height: 70px;
+	height: 130px;
 	margin: auto;
 	margin-top: 90px;
 	text-align: center;
@@ -611,6 +606,7 @@ input[type=email] {
 	font-size: 16px;
 	margin: auto;
 	margin-bottom: 20px;
+	padding-left: 7px;
 }
 
 input[type=email]:focus {
@@ -655,7 +651,7 @@ div.response {
 
 div.social {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	background-color: #AFE5DB;
 	border:1px;
 	border-color: transparent;
@@ -667,7 +663,7 @@ div.icons {
 	display: flex;
 	width: 100%;
 	position: absolute;
-	margin: 90px auto;
+	margin: 100px auto;
 	text-align: center;
 }
 
@@ -676,7 +672,7 @@ div.icon-fb, div.icon-ig, div.icon-linked {
 }
 
 .fa-facebook-square, .fa-instagram, .fa-linkedin {
-	font-size: 40px;
+	font-size: 50px;
 	color: white;
 }
 
@@ -712,7 +708,6 @@ div.copyright-sign {
 	margin-top: 13px;
 	margin-bottom: 0;
 	color: white;
-
 }
 
 .copy-space {
@@ -822,7 +817,14 @@ div.copyright-sign {
 		flex: 1;
 	}
 	
+	.main-image-mobile {
+		display: none;
+	}
 
+	img.main-image {
+		display: block;
+		width: 100%;
+	}
 }
 
 /* For MEDIUM devices */
@@ -910,21 +912,6 @@ div.copyright-sign {
 	.logo a {
 		left: 20px;
 		top: 15px;
-	}
-
-	#slider {
-		width: 720px;
-		height: 540px;
-	}
-	
-	#slider .slides {
-		width: 6000px;
-		height: 540px;
-	}
-	
-	#slider .slide {
-		widows: 720px;
-		height: 540px;
 	}
 
 	li.buttons {
@@ -1075,21 +1062,6 @@ div.copyright-sign {
 		left: 50px;
 		top: 15px;
 		transition: 0.3s;
-	}
-	
-	#slider {
-		width: 720px;
-		height: 540px;
-	}
-	
-	#slider .slides {
-		width: 6000px;
-		height: 540px;
-	}
-	
-	#slider .slide {
-		widows: 720px;
-		height: 540px;
 	}
 
 	.logo a:hover {
@@ -1243,21 +1215,6 @@ div.copyright-sign {
 		top: 15px;
 		transition: 0.3s;
 	}
-
-	#slider {
-		width: 720px;
-		height: 540px;
-	}
-	
-	#slider .slides {
-		width: 6000px;
-		height: 540px;
-	}
-	
-	#slider .slide {
-		widows: 720px;
-		height: 540px;
-	}
 	
 	.logo a:hover {
 		font-size: 21px;
@@ -1383,21 +1340,6 @@ input[type=submit] {
 input[type=email], input[type=submit] {
 	display: inline-block;
 }
-	
-#slider {
-	width: 720px;
-	height: 540px;
-}
-
-#slider .slides {
-	width: 6000px;
-	height: 540px;
-}
-
-#slider .slide {
-	widows: 720px;
-	height: 540px;
-}
 
 	.logo a {
 		font-size: 20px;
@@ -1447,7 +1389,65 @@ input[type=email], input[type=submit] {
 	}
 }
 
+/* from 768 up "about me" */
 
+@media (min-width: 768px) {
+
+	div.about-me-img-wrapper {
+		display: none;
+	}
+
+	div.container-slider {
+		display: block;
+		position: relative;
+		margin-top: 40px;
+	}
+
+	#slider {
+		width: 720px;
+		height: 540px;
+		overflow: hidden;
+		margin: auto;
+	}
+	
+	#slider .slides {
+		display: block;
+		width: 6000px;
+		height: 540px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#slider .slide {
+		float: left;
+		list-style-type: none;
+		width: 720px;
+		height: 540px;
+	}
+
+	div.introduction {
+		line-height: 40px;
+	}
+
+	div.intro-content {
+		width: 70%;
+		padding: 100px 0;
+	}
+	
+	p.my-intro {
+		font-size: 23px;
+	}
+
+	img.main-image {
+		display: block;
+		width: 100%;
+	}
+
+	.main-image-mobile {
+		display: none;
+	}
+
+}
 
 
 
