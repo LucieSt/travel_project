@@ -341,7 +341,7 @@ img.image {
 i.index-chevron {
 	display: none;
 	position: absolute;
-	top: 95vh;
+	top: 80vh;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
@@ -1445,7 +1445,8 @@ input[type=email], input[type=submit] {
 
 	img.main-image-index {
 		display: block;
-		width: 100%;
+		max-width: 680px;
+		margin: 20px auto;
 	}
 
 	.main-image-mobile {
