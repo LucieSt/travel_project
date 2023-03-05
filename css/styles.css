@@ -1360,11 +1360,6 @@ input[type=email], input[type=submit] {
 		margin-top: -4px;
 	}
 
-	body {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
 	div.hamburger {
 		display: none;
 	}
